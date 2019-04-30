@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gsb_fraisDataSet" targetNamespace="http://tempuri.org/gsb_fraisDataSet.xsd" xmlns:mstns="http://tempuri.org/gsb_fraisDataSet.xsd" xmlns="http://tempuri.org/gsb_fraisDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gsb_fraisConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gsb_fraisConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GSB.Properties.Settings.GlobalReference.Default.gsb_fraisConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="fichefraisTableAdapter" GeneratorDataComponentClassName="fichefraisTableAdapter" Name="fichefrais" UserDataComponentName="fichefraisTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gsb_fraisConnectionString (Settings)" DbObjectName="gsb_frais.fichefrais" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idVisiteur`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat` FROM `fichefrais`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gsb_fraisDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gsb_fraisDataSet" msprop:Generator_UserDSName="gsb_fraisDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="fichefrais" msprop:Generator_TableClassName="fichefraisDataTable" msprop:Generator_TableVarName="tablefichefrais" msprop:Generator_TablePropName="fichefrais" msprop:Generator_RowDeletingName="fichefraisRowDeleting" msprop:Generator_RowChangingName="fichefraisRowChanging" msprop:Generator_RowEvHandlerName="fichefraisRowChangeEventHandler" msprop:Generator_RowDeletedName="fichefraisRowDeleted" msprop:Generator_UserTableName="fichefrais" msprop:Generator_RowChangedName="fichefraisRowChanged" msprop:Generator_RowEvArgName="fichefraisRowChangeEvent" msprop:Generator_RowClassName="fichefraisRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
